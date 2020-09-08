@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title> IC4 </title>
+  <title> IC5 </title>
   <script src="resources/jsPsych/jspsych.js"></script>
   <script src="resources/jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
   <script src="resources/jsPsych/plugins/jspsych-html-button-response.js"></script>
@@ -25,23 +25,23 @@
 
   // load in images
   preload_images = [
-'resources/images/RED.png',
-'resources/images/BLUE.png',
-'resources/images/GREY.png',
-'resources/images/shock.png',
-'resources/images/BLANK.png',
-'resources/images/BROKEN.png'
-];
+    'resources/images/RED.png',
+    'resources/images/BLUE.png',
+    'resources/images/GREY.png',
+    'resources/images/shock.png',
+    'resources/images/BLANK.png',
+    'resources/images/BROKEN.png'
+  ];
 
- // turn images into html strings to shove into trials
- var stim_off = '<img src = resources/images/GREY.png height = 200 width = 200></img>'
- var shock_display = '<img src = resources/images/shock.png height = 250 width = 250></img>'
- var blank = '<img src = resources/images/BLANK.png height = 250 width = 250></img>'
+  // turn images into html strings to shove into trials
+  var stim_off = '<img src = resources/images/GREY.png height = 200 width = 200></img>'
+  var shock_display = '<img src = resources/images/shock.png height = 250 width = 250></img>'
+  var blank = '<img src = resources/images/BLANK.png height = 250 width = 250></img>'
 
 
   // set up counterbalancing + participant condition.
-  var cb = Math.floor(Math.random() * 4) + 1;
-  var group = Math.floor(Math.random() * 3) + 1;
+  var cb = Math.floor(Math.random() * 2) + 1;
+  var group = Math.floor(Math.random() * 2) + 1;
 
   // Sample type (mturk or sona_online?)
   var sample = "sona_online"
